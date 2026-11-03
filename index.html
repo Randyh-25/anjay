@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Motor Honda</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --primary: #d70000;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(120deg, #b10000, #ed1c24);
+      color: #fff;
+      padding: 56px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 680px;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 40px;
+    }
+
+    .section-title {
+      margin: 0 0 16px;
+      font-size: 1.4rem;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .price {
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 22px 12px 32px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Katalog Motor Honda</h1>
+    <p>
+      Temukan pilihan motor Honda terbaik untuk kebutuhan harian, touring, hingga gaya hidup aktif.
+      Cek spesifikasi singkat dan rentang harga sebelum datang ke dealer.
+    </p>
+  </header>
+
+  <main>
+    <h2 class="section-title">Pilihan Motor Populer</h2>
+    <section class="catalog" aria-label="Katalog motor Honda">
+      <article class="card">
+        <h3>Honda BeAT</h3>
+        <div class="meta">Skuter Matik • 110cc • Irit BBM</div>
+        <div class="price">Mulai Rp18.500.000</div>
+        <a class="btn" href="#" aria-label="Lihat detail Honda BeAT">Lihat Detail</a>
+      </article>
+
+      <article class="card">
+        <h3>Honda Vario 160</h3>
+        <div class="meta">Skuter Premium • 160cc • ABS</div>
+        <div class="price">Mulai Rp27.350.000</div>
+        <a class="btn" href="#" aria-label="Lihat detail Honda Vario 160">Lihat Detail</a>
+      </article>
+
+      <article class="card">
+        <h3>Honda PCX 160</h3>
+        <div class="meta">Skuter Comfort • 160cc • Bagasi Luas</div>
+        <div class="price">Mulai Rp32.900.000</div>
+        <a class="btn" href="#" aria-label="Lihat detail Honda PCX 160">Lihat Detail</a>
+      </article>
+
+      <article class="card">
+        <h3>Honda CBR150R</h3>
+        <div class="meta">Sport Fairing • 150cc • Racing DNA</div>
+        <div class="price">Mulai Rp37.900.000</div>
+        <a class="btn" href="#" aria-label="Lihat detail Honda CBR150R">Lihat Detail</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Harga dapat berbeda di setiap wilayah. Hubungi dealer Honda terdekat untuk informasi terbaru.
+  </footer>
+</body>
+</html>
